@@ -16,3 +16,4 @@ public class Java025_for {
 		System.out.printf("i=%d sum=%d\n", i, sum);
 }
 }
+ 

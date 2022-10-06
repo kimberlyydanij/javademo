@@ -18,4 +18,4 @@ public class Java024_for {
 			System.out.println(i);
 		}
 }
-}
+} 

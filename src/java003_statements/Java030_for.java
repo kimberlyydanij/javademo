@@ -24,7 +24,7 @@ public class Java030_for {
 				
 			System.out.println(i);
 		}
-
+ 
 	}
 
 }
