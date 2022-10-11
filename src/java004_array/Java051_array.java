@@ -1,6 +1,6 @@
 package java004_array;
 
-public class Java051_java {
+public class Java051_array {
 
 	public static void main(String[] args) {
 		
