@@ -6,8 +6,27 @@ public class Java059_method {
 		int data = 10;
 		process(data);
 		
-	} // end main
+	String result = process(data)? "짝수" : "홀수";
+	System.out.printf("%d는(은) %s입니다.\n",data,result);
 	
+	//int a = 1;
+	//System.out.printf("%d %d %d \n",a++,a++,a++);
+	
+} // end main
+	
+	
+	public static boolean process(int data) {
+		// data 매개변수의 값이 짝수이면 true,
+		// 홀수이면 false를 리턴하는 메소드 구현
+		
+		/*
+		 * if(data%2==0) {
+			 return true; }
+		else  {
+			return false; } */
+		return data % 2 == 0 ? true : false;
+	
+	/*
 	public static boolean process(int data) {
 		// data 매개변수의 값이 짝수이면 true,
 		// 홀수이면 false를 리턴하는 메소드 구현
@@ -18,6 +37,7 @@ public class Java059_method {
 		else  {
 			System.out.printf("%d는 홀수입니다.\n",data); }
 			return false;
+	*/
 	
 	} // end process()
 } // end class
