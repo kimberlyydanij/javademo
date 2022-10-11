@@ -26,6 +26,22 @@ public class Prob_05 {
 
 	public static void main(String[] args) {
 		
+		String name[]= {"소원","예린","은하","유주","신비"};
+		int jum[][] = {{1,3,2,4,3,1,4,2,2,1},
+					   {3,2,4,2,2,1,1,3,4,1},
+					   {2,4,3,2,1,2,1,3,3,4},
+					   {2,3,3,1,1,3,2,2,4,4},
+					   {3,1,1,2,4,1,2,3,1,3}};
+		int dap[] = {1,2,3,4,4,3,2,1,1,2};
+		for(int i=0;i<name.length;i++) {
+			int sum=0;
+			for(int j=0;j<dap.length;j++) {
+				if(jum[i][j]==dap[j])
+					sum++; }  //end j
+			System.out.printf("%2s 점수 : %2d점 \n",name[i],sum);
+					
+		} // end i;
+				
 	}//end main()
 
 }//end class
