@@ -36,13 +36,13 @@ public class Prob002_method {
 		 //if(num>='0' && num<='9')
 		char num; 
 		int cnt = 0;
-		for (int i=0;i<data.length()-1;i++) {
+		for (int i=0;i<data.length();i++) {
 			num = data.charAt(i);
 			if(num<'0' && num>'9') {
 				cnt = cnt + 1; } // end  if
 		} // end for;
-			if(cnt!=0)	prnDisplay(false);
-			else prnDisplay(true);
+			if(cnt==0)	prnDisplay(true);
+			else prnDisplay(false);
 		
 	return false;
 	}// end numCheck()
