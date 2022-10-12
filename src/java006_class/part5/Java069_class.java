@@ -14,6 +14,9 @@ public class Java069_class {
 		System.out.printf("var_string=%s\n",mv.var_string);
 		System.out.printf("var_arr=%s\n",mv.var_arr);
 		
+		//int num;
+		//System.out.printf("num:%d\n",num); // The local variable num may not have been initialized
+		//지역변수는 초기값을 주지 않으므로 오류
 
 	}
 
