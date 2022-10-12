@@ -29,10 +29,9 @@ public class Song {
 		{
 			if(i!=this.composer.length-1) {
 			System.out.printf("%s, ",this.composer[i]); }
-			else { System.out.printf("%s",this.composer[i]);}
+			else { System.out.printf("%s\n",this.composer[i]);}
 			
 		}
-		System.out.println();
 		//System.out.println("작곡가 : "+this.composer);
 		System.out.println("년도 : "+this.year);
 		System.out.println("트랙 : "+this.track);
