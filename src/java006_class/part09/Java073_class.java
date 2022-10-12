@@ -11,7 +11,7 @@ package java006_class.part09;
  * 년도 : 1977
  * 트랙 : 2
  */
-public class Java073_class 
+public class Java073_class {
 
 	public static void main(String[] args) {
 		Song sg = new Song("Dancing Queen","ABBA","Arrival",
