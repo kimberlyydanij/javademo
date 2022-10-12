@@ -16,14 +16,14 @@ String[] name = {"홍길동","김영희"};
 			int ma;
 			boolean gender; }
 	<구조체 선언> 반드시 정의 후 선언 해 주어야 함
-	person ps; (선언 후 메모리가 확보 됨)
+	Person ps; (선언 후 메모리가 확보 됨)
 	ps.name = {"홍길동"};
 	ps.ko = 90;
 	ps.en = 80;
 	ps.ma = 70;
 	ps.gender = true;
 	
-	person pn;
+	Person pn;
 	ps.name = {"김영희"};
 	ps.ko = 80;
 	ps.en = 70;
@@ -64,7 +64,7 @@ String[] name = {"홍길동","김영희"};
 	Person ps;
 	<객체 생성>
 	ps = new Person(); (생성자명은 클래스명과 같아야 한다., new 선언을 해야 메모리가 할당된다)
-	ps.name = "홍길동";
+	ps.name = "홍길동";  // 스택을 통한 접근
 	ps.age = 30;
 	ps.gender = '남';
 	ps.develop();
@@ -76,12 +76,20 @@ String[] name = {"홍길동","김영희"};
 	ps.gender = '여';
 	ps.develop();
 	ps.run();
+	  
+	Method Area = 정적인 변수, 메소드는 클래스를 통해 접근이 가능 (static)
 	
- 
+JVM 메모리 구조
+1. method area  : 클래스의 정보, 메소드 바이트 코드, 클래스변수, 상수
+2. stack area : 지역변수, 매개변수
+3. heap area : 클래스객체, 배열, enum
 
-      
-	
-	
+자바 프로그램의 특징
+1. 플랫폼에 독립적이다.
+2. 자동으로 메모리 관리를 한다. (가비지 컬렉션에서 관리)
+3. 네트워크와 분산환경을 지원한다.,
+4. 멀티스레드를 지원한다.
+
 		
 
 
