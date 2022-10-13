@@ -11,4 +11,8 @@ public class BookShop {
 		this.code = code;
 		this.price = price;
 	}
+	
+	public String toString() {
+		return String.format("%5s %8d",code,price);
+	}
 }//end class
