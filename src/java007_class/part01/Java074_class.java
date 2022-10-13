@@ -1,4 +1,4 @@
-package java007_class;
+package java007_class.part01;
 
 public class Java074_class {
 

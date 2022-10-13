@@ -1,8 +1,8 @@
-package java007_class.part01;
+package java007_class.part02;
 
 import com.sun.tools.javac.tree.DCTree.DCAttribute;
 
-import java007_class.Goods;
+import java007_class.part01.Goods;
 import jdk.vm.ci.meta.JavaKind.FormatWithToString;
 
 /* 김병조/이과/39

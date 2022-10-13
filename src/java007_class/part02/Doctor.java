@@ -1,4 +1,4 @@
-package java007_class.part01;
+package java007_class.part02;
 
 public class Doctor {
 	String name; // 의사 명
