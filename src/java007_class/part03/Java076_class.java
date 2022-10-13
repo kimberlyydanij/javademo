@@ -13,7 +13,9 @@ public class Java076_class {
 		
 		Calc[] nfo = new Calc[2];
 		for(int i=0;i<nfo.length;i++) {
-			checkOperator(ope[i])
+			if(checkOperator(ope[i])) {
+				return;
+			};
 			nfo[i]= new Calc(left[i], right[i], ope[i]); 
 		} // end i
 		prn(nfo);
@@ -26,7 +28,9 @@ public class Java076_class {
 	} // end prn()
 	
 	public static boolean checkOperator(char ope) {
-		
+		if(!(ope=='+'||ope=='-'||ope=='*'||ope=='/')) {
+			System.out.println("+, -, *, / 연산자만 가능합니다");
+			return true; }
 		return false;
 	} // end checkOperator()
 } // end class

@@ -29,7 +29,7 @@ public class Calc {
 
 	public String toString() {
 	
-		return toString("%2d %2c %2d = %d", left, ope, right, process());
+		return String.format("%2d %2c %2d = %d", left, ope, right, process());
 	}
 
 } // end Calc
