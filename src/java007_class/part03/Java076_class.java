@@ -1,9 +1,32 @@
 package java007_class.part03;
 
+/* [출력결과]
+ * 10  + 3  = 13
+ * 3   * 2  = 6
+ */
 public class Java076_class {
 
 	public static void main(String[] args) {
+		int[] left = {10,3};
+		int[] right = {3,2};
+		char[] ope = {'+','*'}; // +, -, *, /만 입력받도록 함
 		
-	}
+		Calc[] nfo = new Calc[2];
+		for(int i=0;i<nfo.length;i++) {
+			checkOperator(ope[i])
+			nfo[i]= new Calc(left[i], right[i], ope[i]); 
+		} // end i
+		prn(nfo);
+	}//end main
 
-}
+	public static void prn(Calc[] nfo) {
+		for(int i=0;i<nfo.length;i++) {
+			System.out.println(nfo[i].toString());
+		}
+	} // end prn()
+	
+	public static boolean checkOperator(char ope) {
+		
+		return false;
+	} // end checkOperator()
+} // end class
