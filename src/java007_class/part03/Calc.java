@@ -1,7 +1,5 @@
 package java007_class.part03;
 
-import javax.xml.stream.events.EndDocument;
-
 public class Calc {
 	int left;
 	int right;
