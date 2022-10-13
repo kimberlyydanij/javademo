@@ -1,7 +1,5 @@
 package java007_class.prob.part01;
 
-import com.sun.jdi.VMMismatchException;
-
 public class MovieShop {
 	String name;
 	int price;
