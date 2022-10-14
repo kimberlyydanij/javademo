@@ -22,7 +22,7 @@ public class HealthRate extends Health {
 	private String rateCheck() {
 		// 비만도를 로직구현을 구현하세요
 		standardHealth();
-		chk = (weight-sw)/(sw/100);
+		chk = (weight-sw)/(sw*100);
 		System.out.println(chk);
 
 		if(chk>=20) {
