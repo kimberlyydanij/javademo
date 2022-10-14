@@ -1,7 +1,8 @@
 package java009_inheritance.part02;
 
-public class MyFather {
-	public MyFather() {
-		System.out.println("My Father");
+public class MyFather extends MyGrand {
+	public MyFather() { //4
+		super(); //5
+		System.out.println("My Father"); //8
 }
-}
+} // 
