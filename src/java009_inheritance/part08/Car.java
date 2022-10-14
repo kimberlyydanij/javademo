@@ -20,4 +20,9 @@ public class Car {
 	public void setColor(String color) {
 		this.color = color;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("차량의 색상 : %s, 속도 : %d", color, getSpeed());
+	}
 }

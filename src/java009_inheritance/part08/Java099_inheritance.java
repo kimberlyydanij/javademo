@@ -9,7 +9,14 @@ public class Java099_inheritance {
 		fe.setColor("Red");
 		fe.waterSpread();
 		System.out.println(fe.toString());
+	
+		OwnerEngine oe = new OwnerEngine();
+		oe.setSeat(8);
+		oe.information();
+		oe.setSpeed(80);
+		oe.setColor("Black");
+		System.out.println(oe.toString());
 		
-	}
+	} //end main
 
-}
+} // end class

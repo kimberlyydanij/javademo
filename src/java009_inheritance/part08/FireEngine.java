@@ -15,8 +15,4 @@ public class FireEngine extends Car{
 		System.out.println(water + "량의 물을 뿌린다.");
 	}
 	
-	@Override
-	public String toString() {
-		return String.format("차량의 색상 : %s, 속도 : %d", color, getSpeed());
-	}
 }
