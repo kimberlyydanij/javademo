@@ -10,7 +10,7 @@ package java009_inheritance.part01;
  * 4. 자식(손)의 클래스는 조상의 모든 자원을 상속받는다. (생성자, static{}은 제외)
  * 5. 자식(손)의 자원은 부모보다 크거나 같아야 하낟.
  * 6. 상속을 할때 사용되는 키워드 : extends
- *    클래스에 클래스를 상속 : 단일상속,  인터페이스에 인터페이스 상속 : 다중상속
+ *    클래스에 클래스를 상속 : extends(단일상속_,  인터페이스에 인터페이스 상속 : extends(다중상속)
  *    
  *    class A{ }
  *    class B extends A[]
@@ -21,6 +21,7 @@ package java009_inheritance.part01;
  *    
  *    class 도형{}
  *    class 삼각형 extends 도형{}
+ *    삼각형은 도형이다.
  */
 
 public class Java092_inheritance {
