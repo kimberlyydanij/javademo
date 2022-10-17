@@ -19,6 +19,10 @@ public class Employee {
 	public String toString() {	
 		return String.format("name:%s code:%s", name, code);
 	}
+	
+	public String pay() {
+		return String.format("%s님의 급여는 %d입니다.\n",name,5000);
+	}
 }
 
 

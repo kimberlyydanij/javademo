@@ -21,4 +21,7 @@ public class Manager {
 		return String.format("name:%s dept:%s depth:%s", name, dept, depth);
 	}
 	
+	public String display() {
+		return String.format("%s님의 근무지역은 %s입니다.\n",name,"Seoul");
+	}
 }
