@@ -6,6 +6,12 @@ public class HomeTv {
 	public HomeTv() {
 	}
 	
+	
+	public HomeTv(String maker) {
+		this.maker = maker;
+	}
+
+
 	public void turnOn() {
 		System.out.printf("%s Tv-전원을 켠다.\n",maker);
 		

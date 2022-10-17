@@ -13,8 +13,6 @@ package java010_abstract_interface.part01;
  * 
  * 추상클래스 제공 목적 : 추상메소드를 강제적으로 오버라이딩하고 객체 생성을 할  수 있도록 하기 위해서
  * 
- * 
- * 
  */
 public class Java102_abstract {
 
