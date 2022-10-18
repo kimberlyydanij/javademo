@@ -1,7 +1,7 @@
 package java012_api;
 
-import com.sun.imageio.plugins.wbmp.WBMPImageReaderSpi;
-
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 /* 
  * 정상적으로 주민번호가 입력이 되었으면 true를 반환하고 아니면
  * false를 반환하는 프로그램을 구현하시오.
@@ -37,8 +37,8 @@ public class Java127_RegEx {
 	} */  // 내가 작성한거
 	
 	public static boolean process(String sn) {
-		return display(sn);
-	}
+		return sn.matches("\\d{6}-\\d{7}");
+	} // end process;;
 	
 	public static void dispay(boolean res) {
 		if(res) {

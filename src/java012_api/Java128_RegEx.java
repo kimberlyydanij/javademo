@@ -1,9 +1,5 @@
 package java012_api;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.Pattern;
-
-import sun.jvm.hotspot.ui.action.FindAction;
-
 /*
  * 아이디를 입력할 때 영문자, 숫자 조합으로 합니다. 최소 5자 이상 10자이하 까지만
  * 가능합니다. (반드시 영문자로 시작한다.)

@@ -6,7 +6,7 @@ package java012_api.prob;
  * 2. 출력결과
  *    dlroW olleH
  *    !gnimmargorP avaJ
- */
+ */ 
 public class Prob002_String { 
 
 	public static void main(String[] args) {
@@ -19,8 +19,12 @@ public class Prob002_String {
 
 	public static char[] reverse(String str) {
 		//여기를 구현하세요.
-		
-		return null;
+		char[] data = str.toCharArray();
+		char[] rt = new char[data.length];
+		for(int i=0;i<data.length;i++) {
+			rt[i]=data[data.length-i-1];
+		}
+		return rt;
 	}//end reverse()
 
 	public static void printCharArray(char[] array) {
