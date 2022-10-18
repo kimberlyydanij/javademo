@@ -18,8 +18,8 @@ public class Java119_String {
 	public static char[] display(String alpa) {
 	// alpa 매개변수에 저장된 문자열을 reverse한 후 반환하는 프로그램 구현\
 		
-	char[] arr = new char[alpa.length()];
-	for(int i=0;i<arr.length;i++) {
+	char[] arr = new char[alpa.length()];  // 문자열크기 묻기 .length()
+	for(int i=0;i<arr.length;i++) { // 배열의 크기 묻기 .length
 		arr[i]= alpa.charAt(arr.length-i-1); 
 	}
 	return arr;} // end display
