@@ -26,5 +26,16 @@ public class Java124_RegEx {
 		System.out.println(sg);
 		System.out.println("Regular Expression을 이용한 문자 변경");
 		System.out.println(sn.replaceAll("[ar]","_"));  // [] 안의 숫자는 a이거나 r
+		
+		System.out.println(sn.matches(".*[ar].*"));  //true, 문자열안에 a이거나 r이 포함되어 있으면 true, 아니면 false 리턴
+		System.out.println(sn.matches("[ar].*")); //false, a이거나 r로 시작하면;
+		
+		String st = "java      korea";
+		String sa = st.replaceAll("\\s{2,3}", "@");  // \\s 공백 2~3을 @로 바꿔라
+		System.out.println(sa);
+		String so = "java       korea";
+		String sb = so.replaceAll("\\s{1,2}", "@");
+		System.out.println(sb);
+		
 } // end main
 }// end class
