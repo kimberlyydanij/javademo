@@ -30,7 +30,7 @@ public class Java125_RegEx {
 		System.out.println(st.matches("[ab].{5}")); //true
 		
 		st = "aetwefcc";
-		//true a나 b로 시작하고 임이의 숫자가 1~5개이며 cc로 끝나면 true
+		//true a나 b로 시작하고 임의의 숫자가 1~5개이며 cc로 끝나면 true
 		System.out.println(st.matches("[ab].{1,5}cc")); //true 
 		
 		/*
@@ -66,18 +66,18 @@ public class Java125_RegEx {
 		System.out.println(input1.matches("[\\w]{5,10}")
 				&& Pattern.compile("[0-9]").matcher(input1).find()
 				&& Pattern.compile("[a-zA-Z]").matcher(input1).find());  // input1에 0~9가 있는지, 영문 포함인지 찾기
-						
-		
-		/*
-		 * Pattern 플래그 값 사용(상수)
-		 * Pattern.CANNO_EQ : None 표준화 된 매칭 모드를 활성화 합니다.,
-		 * Pattern.CASE_INSENSITIVE : 대소문자 상관 없이
-		 * Pattern.COMMENTS : 공백과 '$'으로 시작하는 주석이 무시됩니다.(라인긔 끝까지);
-		 * Pattern.MULTILINE : 수식 '^'는 라인의 시작과, '$'는 라인의 끝과 MATCH 됩니다.
-		 * Pattern.DOTALL : 수식 '.'과 모든 문자와 MATCH되고 '\n'도 MATCH에 포함됩니다.
-		 * Pattern.UNICODE_CASE : 유니코드를 기준으로 대소문자 구분없이 MATCH 시킵니다.
-		 * Pattern.UNIX_LINES : 수식 . 과 ^과 $의 MATCH시에 한 라인의 끝을 의미하는 '\n'만 인식됩니다.
+			
+		/* 
+		* Parttern 플래그 값 사용(상수)
+		Pattern.CANON_EQ : None표준화된 매칭 모드를 활성화합니다.
+		Pattern.CASE_INSENSITIVE : 대소문자를 구분하지 않습니다. 
+		Pattern.COMMENTS : 공백과 #으로 시작하는 주석이 무시됩니다. (라인의 끝까지).
+		Pattern.MULTILINE : 수식 '^' 는 라인의 시작과, '$' 는 라인의 끝과 match 됩니다.
+		Pattern.DOTALL : 수식 '.'과 모든 문자와 match 되고 '\n' 도 match 에 포함됩니다.
+		Pattern.UNICODE_CASE : 유니코드를 기준으로 대소문자 구분 없이 match 시킵니다.
+		Pattert.UNIX_LINES : 수식 '.' 과 '^' 및 '$'의 match시에 한 라인의 끝을 의미하는 '\n'만 인식됩니다.
 		 */
+		
 		
 		String str = "The BEst   thigs in best life are best free ";
 		boolean res = Pattern.compile("best").matcher(str).find();
