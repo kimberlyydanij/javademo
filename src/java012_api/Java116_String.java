@@ -21,6 +21,9 @@ public class Java116_String {
 		//st.euqalsIgnoreCas(st) : 대소문자 구분안하고 비교함 안함
 		//st.equals(st) : 대소문자 구분하여 비교함
 		
+		//toSting 메모리에 저장된 문자열 리턴
+		System.out.println(st.toString()); //java
+		System.out.println(st);	//java
 	}
 
 }
