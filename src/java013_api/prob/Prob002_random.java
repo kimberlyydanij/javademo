@@ -1,10 +1,7 @@
 package java013_api.prob;
 
-import java.awt.Image;
 import java.util.Arrays;
 import java.util.Random;
-
-import jdk.tools.jmod.resources.jmod;
 
 /*
  * [문제]
@@ -39,7 +36,7 @@ public class Prob002_random {
 		for(int i=0;i<10;i++) {
 			arr[i] = ran.nextInt(20)+1;
 		}
-		
+		Arrays.sort(arr);
 		return arr;
 	}// end makeArray()
 
@@ -48,12 +45,15 @@ public class Prob002_random {
 		
 			
 		for(int i=0;i<10;i++) {
-			for(int j=1;j<11;j++) {
-				if(array[i]==array[j]) 
-					break;
+			for(int j=1;j<i;j++) {
+					if(array[i]==array[j]) {
+						j++;
+					}
+						
 				}
 			
-			System.out.print(array[i]);
+			System.out.print(array[i]+",");
+			}
 				
 		
 	}// end printUniqueNumber()
