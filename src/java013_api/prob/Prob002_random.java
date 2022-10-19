@@ -1,6 +1,10 @@
 package java013_api.prob;
 
+import java.awt.Image;
+import java.util.Arrays;
 import java.util.Random;
+
+import jdk.tools.jmod.resources.jmod;
 
 /*
  * [문제]
@@ -30,16 +34,28 @@ public class Prob002_random {
 
 	private static int[] makeArray() {
 		// 난수값를 발생시킨후 반환하는 프로그램을 구현하시오.
+		Random ran = new Random();
+		int[] arr = new int[10];
+		for(int i=0;i<10;i++) {
+			arr[i] = ran.nextInt(20)+1;
+		}
 		
-		
-		return null;
+		return arr;
 	}// end makeArray()
 
 	private static void printUniqueNumber(int[] array) {
 		// array배열에서 중복되지 않은 유일한 숫자만을 출력하는 프로그램을 구현하시오.		
 		
 			
-
+		for(int i=0;i<10;i++) {
+			for(int j=1;j<11;j++) {
+				if(array[i]==array[j]) 
+					break;
+				}
+			
+			System.out.print(array[i]);
+				
+		
 	}// end printUniqueNumber()
 }// end Prob04
 
