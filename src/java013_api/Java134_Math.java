@@ -4,7 +4,7 @@ import static java.lang.Math.E;
 import static java.lang.Math.min;
 import static java.lang.Math.*;
 
-public class Java034_Math {
+public class Java134_Math {
 
 	public static void main(String[] args) {
 
