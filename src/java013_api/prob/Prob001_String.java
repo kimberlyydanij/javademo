@@ -1,7 +1,5 @@
 ﻿package java013_api.prob;
 
-
-
 /*
  * [출력결과]
  * Samsung 상품 정보
@@ -20,13 +18,14 @@ public class Prob001_String {
 	private static Product createProduct(String message) {
 		//매개변수로 들어온 문자열을 적절히 이용하여 
 		//Product 객체를 생성후 리턴하는createProduct() 메서드를 구현하시오. 
-             
-		return null;
+		String data[] = message.split("\\*\\*");
+		Product info = new Product();
+		info.setProductId(data[0]);
+		info.setMaker(data[1]);
+		info.setName(data[2]);
+		info.setAmount(Integer.valueOf(data[3]));
+		info.setPrice(Integer.valueOf(data[4]));
+	        
+		return info;
 	}// end creatProduct
 }// end class
-
-
-
-
-
-
