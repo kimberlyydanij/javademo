@@ -1,7 +1,7 @@
 package java014_api.prob;
 
-import java.util.Random;
 import java.util.Scanner;
+import static java.lang.Math.*;
 /*
 	1부터 100까지 숫자를 입력하세요:50
 	1과 100사이의 값 중 입력한 값보다 큰 값을 입력하세요.
@@ -23,6 +23,21 @@ public class Prob001_Scanner {
 		int count = 0;//실행횟수를 저장할 변수
 		//randomNum과 userNum이 일치할때 까지 반복하여 입력받아 평가하는 코드를 작성하세요.
 		
+		double ran = random();
+		ran = floor(ran * 100);
+		randomNum = (int)ran;
+		
+		while(userNum!=randomNum) {
+			System.out.print("1부터 100까지의 숫자를 입력하세요 :");
+			userNum = key.nextInt();
+			count++;
+			if(userNum > randomNum) 
+				System.out.println("1과 100사이의 값 중 입력한 값 보다 작은 값을 입력하세요.");
+			else
+				System.out.println("1과 100사이의 값 중 입력한 값 보다 큰 값을 입력하세요.");
+		}
+		System.out.println("사용자가 입력한 값과 컴퓨터가 발생시킨 임의의 값이 일치합니다.");
+		System.out.printf("총 실행 횟수는 %d번 입니다.\n",count);
 		
 	}//end main()
 
