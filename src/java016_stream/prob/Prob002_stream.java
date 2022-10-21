@@ -27,7 +27,20 @@ public class Prob002_stream {
 
 	private static void makeVariable(String fileName) {
 		// 구현하세요.
+
+		try(Scanner sc = new Scanner(fileName)) {
+			
+			while(sc.hasNextLine()) {
+
+				String[] data = sc.nextLine().split("[_]");
+				System.out.println(data[0]);
+				
 	
+			}
+			
+		} catch (Exception e) {
+			
+		}
 
 	}// end makeVariable()
 }// end class
