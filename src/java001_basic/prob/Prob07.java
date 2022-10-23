@@ -26,7 +26,9 @@ public class Prob07 {
 			// System.out.println(sum);
 			mok = sum / 100;
 			System.out.printf("100원 : %d개\n",mok);
-			sum = sum % 100
+			sum = sum % 100;
+			System.out.println(sum);
+			
 			//if(mok!=0)
 				
 			
