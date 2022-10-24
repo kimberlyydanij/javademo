@@ -2,6 +2,7 @@ package java018_collection;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.Set;
 
 /*
  * Hashtable
@@ -17,6 +18,7 @@ public class Java194_Hashtable {
 		table.put(10, "java");
 		table.put(20, "jsp");
 		table.put(30, "spring");
+		table.put(20, "mysql");
 
 		System.out.println(table.get(10));
 		
@@ -32,6 +34,14 @@ public class Java194_Hashtable {
 		while(enuKey.hasMoreElements()) {
 			Integer key = enuKey.nextElement();
 			System.out.printf("%d:%s \n",key,table.get(key));
+			
+		System.out.println("============================");
+		table.keySet();
+		Set<Integer> st = table.keySet();
+		//for(Integer key2 : table.keySet())
+			System.out.printf("%d:%s\n",key,table.get(st));
+			
+		
 		}
 		
 	}  //end main
