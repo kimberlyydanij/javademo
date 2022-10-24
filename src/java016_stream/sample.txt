@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 java
 jsp
 spring
+=======
+Java Test
+JSP Test
+>>>>>>> branch 'master' of https://github.com/kimberlyydanij/javademo.git

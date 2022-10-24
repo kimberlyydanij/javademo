@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 nrpackage java016_stream;
+=======
+package java016_stream;
+>>>>>>> branch 'master' of https://github.com/kimberlyydanij/javademo.git
 
 import java.io.File;
 import java.io.FileNotFoundException;
