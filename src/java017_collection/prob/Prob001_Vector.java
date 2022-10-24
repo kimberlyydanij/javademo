@@ -28,13 +28,12 @@ public class Prob001_Vector {
 
 	private static Vector<Book> makeBookList() throws Exception {
 		// booklist.txt 파일의 데이터를 Vector에 저장한 후 리턴하는 프로그램을 구현하시오.
-		File file = new File("booklist.txt");
-		FileReader fr = new FileReader(file);
-		Scanner sc = new Scanner(System.in);
+		File file = new File("src/java017_collection/prob/booklist.txt");
+		//FileReader fr = new FileReader(file);
+		Scanner sc = new Scanner(file);
 		Vector<Book> v = new Vector<Book>();
-		v.addAll();
-
-		
+		//System.out.println(sc.nextLine());
+		v.add(sc.nextLine());
 		
 	
 		return v;
