@@ -1,5 +1,8 @@
 package java018_collection;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 /*
  * 1. 배열 구조의 데이터 관리 : Vector, ArrayList
  *                         ArrayList-추가-(순차적으로 처리할 때 사용)
@@ -9,9 +12,45 @@ package java018_collection;
  * 	  Vector, ArrayList, LinkedList는 add()해 준 순서대로 데이터를 관리 해준다.
  */
 public class Java188_LinkedList {
-
+	public static void main(String[] args) {
+		
+		ArrayList<String> aList = new ArrayList<String>();
+		//append
+		aList.add(new String("java"));
+		aList.add(new String("jsp"));
+		aList.add(new String("spring"));
+		
+		//insert
+		aList.add(1,new String("mysql"));
+		
+		//remove
+		aList.remove(2);
+		
+		for(int i=0;i<aList.size();i++)
+			System.out.printf("aList[%d]=%s\n", i, aList.get(i));
+		
+		System.out.println("===LinkedList===");
+		LinkedList<String> aNode = new LinkedList<String>();
+		//append
+		aNode.add(new String("java"));
+		aNode.add(new String("jsp"));
+		aNode.add(new String("spring"));
+		
+		//insert
+		aNode.add(1, new String("mysql"));
+		
 	
-
+		
+		//remove 무조건 첫번째 요소를 삭제
+		aNode.remove();
+		//remove 무조건 마지막 요소를 삭제
+		aNode.removeLast();
+		//remove 무조건 첫번째 요소를 삭제
+		aNode.removeFirst();
+		
+		//remove
+		for(int i=0;i<aNode.size();i++)
+			System.out.printf("aNode[%d]=%s\n", i, aNode.get(i));
 	} //end main
 
 } //end class
