@@ -22,6 +22,7 @@ public class ArrayTest {
 		} //for i
 		System.out.printf("합계 : %3.2f\n",sum);
 		System.out.printf("평균 : %2.2f\n",sum/cnt);
+		
 	} // end main
 
 	} // end class
