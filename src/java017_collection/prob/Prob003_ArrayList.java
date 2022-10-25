@@ -31,13 +31,14 @@ import java.util.Scanner;
 public class Prob003_ArrayList {
 
 	public static void main(String[] args) {
-		String pathFile=".\\src\\java0412_collection\\prob\\phone.txt";
+		String pathFile=".\\src\\java017_collection\\prob\\phone.txt";
 		ArrayList<SmartPhone> phoneList = phoneProduct(pathFile);
 		prnDisplay(phoneList);
 	}//end main()
 	
 	private static ArrayList<SmartPhone> phoneProduct(String pathFile) {
 		// phone.txt파일의 데이터를 ArrayList에 저장한후 리턴하는 프로그램을 구현하시오.
+		ArrayList<SmartPhone> aList = new ArrayList<SmartPhone>();
 		
 		return null;
 	}//end phoneProduct( )
