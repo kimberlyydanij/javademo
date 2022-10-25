@@ -1,4 +1,6 @@
 /bin/
+<<<<<<< HEAD
+=======
 # Created by https://www.toptal.com/developers/gitignore/api/java,windows,eclipse
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,windows,eclipse
 
@@ -122,3 +124,4 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/java,windows,eclipse
 /.metadata/
+>>>>>>> branch 'master' of https://github.com/kimberlyydanij/javademo.git

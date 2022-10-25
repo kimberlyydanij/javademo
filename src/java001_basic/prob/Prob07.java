@@ -26,7 +26,13 @@ public class Prob07 {
 			// System.out.println(sum);
 			mok = sum / 100;
 			System.out.printf("100원 : %d개\n",mok);
+<<<<<<< HEAD
 			sum = sum % 100
+=======
+			sum = sum % 100;
+			System.out.println(sum);
+			
+>>>>>>> branch 'master' of https://github.com/kimberlyydanij/javademo.git
 			//if(mok!=0)
 				
 			
