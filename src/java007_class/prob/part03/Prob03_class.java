@@ -24,11 +24,20 @@ public class Prob03_class {
 		 	
 	}//end main()
 	
+	
+	//public static String format(String name, int ini, int run, double era);
+	
+	String str = 
 	public static void display(Pitcher[] arr){
+		
 		//이름과 투구이닝 자책점 방어율 순으로 출력하는 로직 구현
 		System.out.println("이름      투구이닝  자책점    방어율");
 		for(Pitcher data : arr) {
+<<<<<<< HEAD
+		 System.out.printf(String.format("%10s %5d %5d %4.2f",data.toString())); 
+=======
 		 System.out.println(data.toString()); 
+>>>>>>> branch 'master' of https://github.com/kimberlyydanij/javademo.git
 		 } // end for
 		
 	}//end display( )

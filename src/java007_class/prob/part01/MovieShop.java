@@ -1,6 +1,9 @@
 package java007_class.prob.part01;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'master' of https://github.com/kimberlyydanij/javademo.git
 public class MovieShop {
 	String name;
 	int price;
