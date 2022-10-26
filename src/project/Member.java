@@ -91,5 +91,6 @@ public class Member {
 		return "Member [mNumber=" + mNumber + ", mName=" + mName + ", mGender=" + mGender + ", mPhone=" + mPhone
 				+ ", mAddress=" + mAddress + "]";
 	}
-	
+
+
 }
