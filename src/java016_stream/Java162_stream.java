@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 public class Java162_stream {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		System.out.println("데이터 입력: ");
 		InputStream is = System.in;
 		int data;

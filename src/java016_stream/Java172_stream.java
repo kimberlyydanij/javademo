@@ -9,7 +9,7 @@ public class Java172_stream {
 	public static void main(String[] args) throws IOException{
 		//File file = new File("java016_stream/temp");
 		//File file = new File("java016_stream/a/b");
-		File file = new File("src/java016_stream/sample.txt");
+		File file = new File("java016_stream/sample.txt");
 		file.deleteOnExit();
 		
 		Scanner sc = new Scanner(file);

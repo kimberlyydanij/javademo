@@ -1,6 +1,3 @@
 java
 jsp
 spring
-=======
-Java Test
-JSP Test

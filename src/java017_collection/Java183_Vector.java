@@ -15,7 +15,7 @@ import java.util.Vector;
 public class Java183_Vector {
 
 	public static void main(String[] args){
-		String path = "src/java017_collection/score.txt";
+		String path = "java017_collection/score.txt";
 		Vector<Sawon> vt = lines(path);
 		prnDisplay(vt);
 		

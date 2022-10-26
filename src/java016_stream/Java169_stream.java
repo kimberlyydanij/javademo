@@ -1,5 +1,4 @@
-
-package java016_stream;
+nrpackage java016_stream;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,7 +8,7 @@ import java.io.RandomAccessFile;
 public class Java169_stream {
 
 	public static void main(String[] args) throws IOException {
-		File file = new File("src/java016_stream/score.txt");
+		File file = new File("java016_stream/score.txt");
 		RandomAccessFile raf = null;
 		raf = new RandomAccessFile(file, "r");
 					
