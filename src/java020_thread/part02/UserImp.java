@@ -12,4 +12,7 @@ public class UserImp implements Runnable{
 			System.out.printf("%s i=%d\n",Thread.currentThread().getName(),i); 
 			
 		} // end for
-}
+} // end run
+	
+} // end class
+
