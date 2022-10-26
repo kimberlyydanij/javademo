@@ -1,6 +1,6 @@
 package java020_thread.part06;
 
-public class Bank implemants Runnable {
+public class Bank implements Runnable() {
 	private AccountNumber an;
 	
 	public Bank() {
