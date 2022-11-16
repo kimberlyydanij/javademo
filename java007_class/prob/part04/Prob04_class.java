@@ -26,15 +26,12 @@ public class Prob04_class {
 			
 			for(BookShop data : shop) {
 				if(data.code=="소설")
-					ntotal = ntotal + data.price; }
-			System.out.println(data.code,ntotal);
-		} // end for i
-				
-				if(shop[i].code=="소설")
-				total += shop[i].price; 
-
-			System.out.println(shop.toString());
-			
+					ntotal += data.price;
+				else if (data.code=="컴퓨터")
+					 ctotal += data.price; 
+			} // and for
+			System.out.println("컴퓨터 " +ctotal);
+			System.out.println("소설 " +ntotal);
 			
 		}//end display()
 
