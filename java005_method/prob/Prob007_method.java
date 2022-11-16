@@ -21,22 +21,46 @@ public class Prob007_method {
 
 	public static void main(String[] args) {
 		int[] arr = {10, 22, 9, 16, 11, 31};
-		int[] result1 = Arrays.sort(arr);
-		int[] result2 = Arrays.sort(arr);
+		int[] result1 = sort(arr,"desc");
+		int[] result2 = sort(arr,"asc");
 
 		System.out.println("내림 차순 결과");
 		for (int i = 0; i < result1.length; i++) {
-			System.out.println(result1[i]);
+			System.out.printf("%d ",result1[i]);
 		}
+		System.out.println();
 		System.out.println("오름 차순 결과");
 		for (int i = 0; i < result2.length; i++) {
-			System.out.println(result2[i]);
+			System.out.printf("%d ",result2[i]);
 		}
 	}//end main( )
 
 	private static int[] sort(int[] array, String orderby) {
 		// 구현하시오.
-		
-		return ;;
+		int[] data=array.clone();
+		int temp;
+		if(orderby=="desc") {
+			
+			for(int i = 0; i < data.length; i++) {
+				for(int j = 0 ; j< data.length; j++) {
+					if (data[i] > data[j]) {
+						temp = data[i];
+						data[i] = data[j];
+						data[j] = temp;
+					} // end if
+				}	// and j
+				} // end i
+			} else if(orderby=="asc") {
+				for(int i = 0; i < data.length; i++) {
+					for(int j = 0 ; j< data.length; j++) {
+						if (data[i] <  data[j]) {
+							temp = data[i];
+							data[i] = data[j];
+							data[j] = temp;
+						} // end if
+					}	// and j
+					} // end i
+			} //end if			
+		return data;
 	}//end sort( )
 }

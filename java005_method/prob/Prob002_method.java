@@ -1,11 +1,5 @@
 package java005_method.prob;
 
-import java.nio.file.WatchKey;
-
-import javax.xml.stream.events.EndDocument;
-
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-
 /*
  *  int[] num=new int[]{2,3,5,};
  	num.length; //배열의 크기
