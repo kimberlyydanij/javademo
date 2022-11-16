@@ -15,7 +15,7 @@ public class LiberalArts extends Student{
 		int total;
 		double avg;
 
-		System.out.println("   이름    학과    총점    평균   순위 ");
+		System.out.println("   이름    학과    총점    평균   ");
 		System.out.println("===================================");
 
 		    
