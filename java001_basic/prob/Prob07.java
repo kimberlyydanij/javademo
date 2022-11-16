@@ -14,25 +14,17 @@ public class Prob07 {
 
 	public static void main(String[] args) {
 		int money = 7777;
-		int mok = money / 500;
-		int sum = money % 500;
 		
-		if (sum == 0) {
-			System.out.printf("500원 : %d개",mok);
-			sum = money % 500;
-		} else if (sum!=0) {
-			System.out.printf("500원 : %d개\n",mok);
-			sum = money % 500;
-			// System.out.println(sum);
-			mok = sum / 100;
-			System.out.printf("100원 : %d개\n",mok);
-			sum = sum % 100
-			//if(mok!=0)
-				
-			
-			
-		}
 		//여기에 작성하시오.
+		
+		int won[] = {500,100,50,10};
+		
+		for(int i=0;i<won.length;i++) {
+			int mok = money/won[i];
+		    System.out.printf("%d 원 : %d 개\n",won[i],mok);
+		    money = money%won[i];		
+		}
+		 System.out.printf("1원 : %d 개\n",money);
 				
 	}//end main()
 
