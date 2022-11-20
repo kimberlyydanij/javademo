@@ -1,5 +1,4 @@
 package java016_stream;
-nrpackage java016_stream;
 
 import java.io.File;
 import java.io.FileNotFoundException;

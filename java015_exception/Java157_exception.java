@@ -26,12 +26,11 @@ public class Java157_exception {
 		try {
 		System.out.printf("%d번째 정수를 입력 :",index+1);
 		num = sc.nextInt();
+		return num;
 		} catch(InputMismatchException ex) {
 			System.out.println("정수를 입력하세요.");
-			//System.out.println("error :"+sc.next());			
-			
+			//System.out.println("error :"+sc.next());				
 		}
 		} // end while
-		return num;
-	}
+	} // end InputData
 } // end class
