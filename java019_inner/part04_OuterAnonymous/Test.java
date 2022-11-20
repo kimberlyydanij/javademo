@@ -2,8 +2,10 @@ package java019_inner.part04_OuterAnonymous;
 
 public class Test extends InnerAnonymous{
 
-	@override
+@Override
 	void prn() {
-		System.out.println(10);
+		super.prn();
 	}
-}
+
+} // end class
+

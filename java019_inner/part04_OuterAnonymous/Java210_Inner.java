@@ -4,7 +4,7 @@ public class Java210_Inner {
 
 	public static void main(String[] args) {
 		OuterAnonymous out = new OuterAnonymous();
-		outer.display();
+		out.display();
 		
 
 	} // end main()
