@@ -14,9 +14,17 @@ package java011_casting.prob.part01;
 public class Prob001_binding {
 
 	public static void main(String[] args) {
-		CPoint a, b;
+
 		// 여기에서 구현하세요.
  
-		CPoint a = new CPoint();
+		CPoint a = new CPoint(2,3);
+		ColorPoint b = new ColorPoint (3,4,"red");
+	
+		a.show();
+		b.show();
+			
+		System.out.println(a.toString());
+		System.out.println(b.toString());
+		
 	}//end main()
 }//end class

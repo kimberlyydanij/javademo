@@ -42,7 +42,7 @@ public class Java110_binding {
 		System.out.println(obj.toString());
 		if(obj instanceof Employee) {
 			Employee employee = (Employee)obj; // 다운캐스팅
-			System.out.println(em.pay()); 
+			System.out.println(employee.pay());
 		} else if(obj instanceof Manager) {
 			Manager mg = (Manager)obj; // 다운 캐스팅
 			System.out.println(mg.display());

@@ -1,7 +1,5 @@
 package java012_api;
 
-import javax.xml.stream.events.EndDocument;
-
 /* 
  * [출력결과]
  * 35276은 숫자입니다.
